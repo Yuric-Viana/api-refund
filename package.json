@@ -1,0 +1,10 @@
+{
+  "name": "refund-api",
+  "version": "1.0.0",
+  "description": "API para solicitação de reembolso",
+  "main": "index.js",
+  "scripts": {},
+  "author": "Yuri Viana",
+  "license": "ISC",
+  "type": "commonjs"
+}
