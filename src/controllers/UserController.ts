@@ -35,6 +35,12 @@ class UserController {
 
         return response.status(201).json()
     }
+
+    async index(request: Request, response: Response) {
+        const users = await prisma.user.findMany()
+
+        return response.json(users)
+    }
 }
 
 export { UserController }
