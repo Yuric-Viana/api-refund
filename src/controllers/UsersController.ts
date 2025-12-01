@@ -5,7 +5,7 @@ import { prisma } from "@/database/prisma";
 import { hash } from "bcrypt";
 import { AppError } from "@/utils/AppError";
 
-class UserController {
+class UsersController {
     async create(request: Request, response: Response) {
         const bodySchema = z.object({
             name: z.string().trim().min(3, { message: "O nome é obrigatório." }),
@@ -43,4 +43,4 @@ class UserController {
     }
 }
 
-export { UserController }
+export { UsersController }
