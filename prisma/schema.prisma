@@ -4,7 +4,7 @@ generator client {
 
 datasource db {
   provider = "sqlite"
-  // url      = "file:./dev.db"
+  url      = "file:./dev.db"
 }
 
 enum UserRole {
@@ -38,7 +38,7 @@ model User {
 model Refunds {
   id String @id @default(uuid())
   name String
-  amout Float
+  amount Float
   category Category
   filename String
 
