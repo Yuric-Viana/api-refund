@@ -1,7 +1,7 @@
 import { Router } from "express";
 
 import multer from "multer";
-import uploadsConfig from "@/uploads/configs"
+import uploadsConfig from "@/configs/upload"
 import { UploadsController } from "@/controllers/UploadsController";
 import { verifyUserAuthorization } from "@/middlewares/verify-user-authorization";
 
