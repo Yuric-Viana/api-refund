@@ -5,7 +5,7 @@ import crypto from "node:crypto"
 // Essa é uma pasta temporária onde o arquivo ficará permitindo a manipulação desse arquivo antes de levá-lo para a pasta de uploads
 const TMP_FOLDER = path.resolve(__dirname, "..", "..", "tmp")
 
-const UPLOAD_FOLDER = path.relative(TMP_FOLDER, "uploads")
+const UPLOAD_FOLDER = path.resolve(TMP_FOLDER, "uploads")
 
 const MAX_SIZE_FOLDER = 1024 * 1024 * 3
 
