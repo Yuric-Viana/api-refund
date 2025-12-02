@@ -1,6 +1,9 @@
 import 'express-async-errors'
+
 import express from 'express'
 import cors from 'cors'
+
+import upload from './configs/upload'
 
 import { errorHandling } from './middlewares/error-handling'
 
@@ -10,6 +13,9 @@ const app = express()
 
 app.use(cors())
 app.use(express.json())
+
+app.use("/uploads", express.static(upload.UPLOAD_FOLDER))
+
 app.use(route)
 app.use(errorHandling)
 
